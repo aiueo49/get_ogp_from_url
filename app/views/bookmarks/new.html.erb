@@ -1,0 +1,15 @@
+<h1>New Bookmark</h1>
+
+<%= form_with model: @bookmark, url: bookmarks_path, method: :post do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :url %>
+    <%= f.text_field :url %>
+  </div>
+
+  <%= f.submit "Save" %>
+<% end %>

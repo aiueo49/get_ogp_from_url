@@ -1,0 +1,12 @@
+<h1><%= @bookmark.title %></h1>
+<p><%= @bookmark.url %></p>
+
+<% if @bookmark.title.present? %>
+  <h2>OGP Preview</h2>
+  <div>
+    <img src="<%= @bookmark.image %>" alt="<%= @bookmark.title %>" />
+    <h3><%= @bookmark.title %></h3>
+    <p><%= @bookmark.description %></p>
+    <p><a href="<%= @bookmark.url %>" target="_blank">View Website</a></p>
+  </div>
+<% end %>
