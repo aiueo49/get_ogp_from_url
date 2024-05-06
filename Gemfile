@@ -70,3 +70,5 @@ group :test do
 end
 
 gem "nokogiri", "~> 1.16"
+
+gem "open-uri", "~> 0.4.1"
